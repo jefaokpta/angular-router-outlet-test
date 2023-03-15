@@ -4,12 +4,12 @@ import {HomeComponent} from "./home.component";
 import {ParagrafoComponent} from "./paragrafo/paragrafo.component";
 
 const routes: Routes = [
-  // {path: '', loadChildren: () => import('./home.module').then(m => m.HomeModule)}
+  {path: 'login', component: ParagrafoComponent},
   {
     path: '', component: HomeComponent, children: [
       {path: ':id', component: ParagrafoComponent}
     ]
-  }
+  },
 ];
 
 @NgModule({
