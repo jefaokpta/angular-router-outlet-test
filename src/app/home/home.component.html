@@ -1,0 +1,19 @@
+<h1>LISTA Q CRIA E DESTROI</h1>
+
+<ul>
+  <li>
+    <p><a routerLink="1">item 1</a></p>
+    <p><a routerLink="2">item 2</a></p>
+    <p><a routerLink="3">item 3</a></p>
+    <p><a routerLink="4">item 4</a></p>
+    <p><a routerLink="5">item 5</a></p>
+    <p><a routerLink="6">item 6</a></p>
+
+  </li>
+</ul>
+<router-outlet
+  (activate)="activate($event)"
+  (deactivate)="deactivate($event)"
+  (detach)="detach($event)"
+  (attach)="attach($event)"
+></router-outlet>
